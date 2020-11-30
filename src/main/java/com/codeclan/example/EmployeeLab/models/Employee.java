@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name="employee")
-public class EmployeeModel {
+public class Employee {
 
     @Id
     @Column(name="id")
@@ -22,7 +22,7 @@ public class EmployeeModel {
     @Column(name="email")
     private String email;
 
-    public EmployeeModel(String firstName, String lastName, int age, String employeeNumber, String email) {
+    public Employee(String firstName, String lastName, int age, String employeeNumber, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
@@ -30,7 +30,7 @@ public class EmployeeModel {
         this.email = email;
     }
 
-    public EmployeeModel(){
+    public Employee(){
 
     }
 
